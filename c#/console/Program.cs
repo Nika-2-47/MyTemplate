@@ -15,6 +15,12 @@ using var loggerFactory = LoggerFactory.Create(builder =>
 ILogger logger = loggerFactory.CreateLogger<Program>();
 
 logger.LogInformation("一度だけログを出力します");
+logger.LogWarning("一度だけログを出力します");
+logger.LogError("一度だけログを出力します");
 
 // ここでプログラム終了
 Console.WriteLine("処理終了");
+
+
+
+
